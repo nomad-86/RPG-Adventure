@@ -1,7 +1,48 @@
 # This .gitignore file should be placed at the root of your Unity project directory
+
+#-----------------------------------------------------------------------------
+#
+# 2025-11-08 Add known operating system helpers. Never for GIT repository.
+#
+
+._*
+.apdisk
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.CFUserTextEncoding
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.DS_Store
+.DS_Store?
+.file-revisions-by-id
+.fseventsd
+.localized
+.shortcut-targets-by-id
+.Spotlight-V100
+.TemporaryItems
+.Trash
+.Trashes
+.VolumeIcon.icns
+.zprofile
+.zsh_history
+$RECYCLE.BIN
+desktop.ini
+Desktop.ini
+ehthumbs.db
+Icon
+Icon?
+Network Trash Folder
+Temporary Items
+Thumbs.db
+Trash
+
+#-----------------------------------------------------------------------------
+
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
