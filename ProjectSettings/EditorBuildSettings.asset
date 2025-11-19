@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/RPG/Scenes/GameMenu.unity
+    path: Assets/ImsRPG25/Scenes/GameMenu.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/RPG/Scenes/GameOver.unity
+    path: Assets/ImsRPG25/Scenes/GameOver.unity
     guid: 96af1d097f6a44e03b3186fa7e1fc5e2
   - enabled: 1
-    path: Assets/RPG/Scenes/Level1.unity
+    path: Assets/ImsRPG25/Scenes/Level1_Tyler.unity
     guid: 4c117e6c1ffc542eca9dc36b7a3e189e
   - enabled: 1
-    path: Assets/RPG/Scenes/Level2.unity
+    path: Assets/ImsRPG25/Scenes/Level2_April.unity
     guid: bcfd6656b05e1437b8e5847cf51ef946
   - enabled: 1
-    path: Assets/RPG/Scenes/Level3.unity
+    path: Assets/ImsRPG25/Scenes/Level3_John.unity
     guid: 85382d42aed0a4621a09acb9cb45fe19
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
