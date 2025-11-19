@@ -76,24 +76,24 @@ Further reading about [GitFlow Workflow for Branching](https://www.atlassian.com
 Each **Branch Name** should reflect its purpose and promise.
 
 **Main Branch**  
-Format: - `main`  
-Example: - main
+Format: `main`  
+Example: main
 
 **Developer Branches**  
-Format: - `develope`  
-Example: - develope
+Format: `develope`  
+Example: develope
 
 **Release Branches**  
-Format: - `release/{version-number}`  
-Example: - release/v1.2.0
+Format: `release/{version-number}`  
+Example: release/v1.2.0
 
 **Feature Branch**  
-Format: - `feature/{feature-name}`  
-Example: - feature/user-authentication
+Format: `feature/{feature-name}`  
+Example: feature/user-authentication
 
 **Hotfix Branches**  
-Format: - `hotfix/{bug-description}`  
-Example: - hotfix/fix-login-error
+Format: `hotfix/{bug-description}`  
+Example: hotfix/fix-login-error
 
 ## Commit Convention
 
@@ -101,7 +101,7 @@ Example: - hotfix/fix-login-error
 
 - `Add` a new feature, story or file.
 - `Change` an existing feature, story or file.
-- `Refactor` to improve code with changing behaviour.
+- `Refactor` improves code without changing behaviour.
 - `Deprecate` notice to remove a feature, story or file.
 - `Remove` a feature, story or file. It is gone.
 - `Fix` a Bug, Defect or unreasonable Limit.
