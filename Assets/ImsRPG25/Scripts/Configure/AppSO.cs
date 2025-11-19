@@ -1,3 +1,36 @@
+/**
+ * A Unity utility for basic runime application management.
+ *
+ * - A ScriptableObject (SO) class to live for the entire global runtime
+ *   execution lifecycle, independant of the Scene GameObject chaos.
+ *
+ * - A helpfull configuration notes box in Unity IDE for team members.
+ *   - Visit /Asstes/{vendorProductCode}/App/Configure/ImsApp.asset
+ *
+ * - Use ImsGDK.AppSO.Get().DoQuitNow() to easily ...
+ *   - Quit Players to their Operating System (OS).
+ *   - Quit Developers to the Unity IDE.
+ *   - Quit using a 'UI' element -> 'OnClick()' event hook.
+ *
+ * - Use ImsGDK.AppSO.Get().DoLoadScene() for centralised scene management.
+ * 
+ * @package   ImmersiveStudios\GameDevelopmentKit
+ * @see       https://www.datamates.wtf/support/
+ * @since     0.0.1 Introduced.
+ * @author    John Lang at DataMates Studio <hello@datamates.wtf>
+ * @license   GPLv3 or later
+ * @copyright Copyright 2024-2025 DataMates Studio (https://www.datamates.wtf/).
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option)
+ * any later version. This program is distributed in the hope that it will be
+ * useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have
+ * received a copy of the GNU General Public License along with this program
+ * in the license.txt file. If not, see <https://www.gnu.org/licenses/>.
+ */
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

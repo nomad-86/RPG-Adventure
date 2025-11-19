@@ -1,3 +1,36 @@
+/**
+ * A Unity IDE utility for developer enhancements at application runtime.
+ *
+ * - A ScriptableObject (SO) class to live for the entire global runtime
+ *   execution lifecycle, independant of the Scene GameObject chaos.
+ *
+ * - A helpfull configuration notes box in Unity IDE for team members.
+ *   - Visit /Asstes/{vendorProductCode}/App/Configure/ImsAppUnityIde.asset
+ *
+ * - Adds 'EventSystem' -> 'AppUnityIdeGO_Listener' GameObject in all scenes.
+ *   - Press (Q)uit to ImsGDK.AppSO.Get().DoQuitNow().
+ *   - Press (0) to ImsGDK.AppSO.Get().DoLoadScene(AppSO.imsAppScenes.gameMenu).
+ *   - Press (1) to ImsGDK.AppSO.Get().DoLoadScene(AppSO.imsAppScenes.level1).
+ *   - Press (2) to ImsGDK.AppSO.Get().DoLoadScene(AppSO.imsAppScenes.level2).
+ *   - Press (3) to ImsGDK.AppSO.Get().DoLoadScene(AppSO.imsAppScenes.level3).
+ * 
+ * @package   ImmersiveStudios\GameDevelopmentKit
+ * @see       https://www.datamates.wtf/support/
+ * @since     0.0.1 Introduced.
+ * @author    John Lang at DataMates Studio <hello@datamates.wtf>
+ * @license   GPLv3 or later
+ * @copyright Copyright 2024-2025 DataMates Studio (https://www.datamates.wtf/).
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option)
+ * any later version. This program is distributed in the hope that it will be
+ * useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have
+ * received a copy of the GNU General Public License along with this program
+ * in the license.txt file. If not, see <https://www.gnu.org/licenses/>.
+ */
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
