@@ -107,7 +107,7 @@ Example: hotfix/fix-login-error
 - `Fix` a Bug, Defect or unreasonable Limit.
 - `Security` improvement against vulnerabilities.
 
-**[Optional]** Each **Git Commit Description** should contain a brief list of changes included within the commit (72 characters maximum, per line). Be nice to your future self.
+**[Mandatory]** Each **Git Commit Description** should contain a brief list of changes included within the commit (72 characters maximum, per line). Be nice to your future self and be technically correct.
 
 ## Coding Convention
 
