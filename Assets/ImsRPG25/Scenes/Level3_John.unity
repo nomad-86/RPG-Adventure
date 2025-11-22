@@ -749,7 +749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3446563281202524987, guid: 73682b4d29058492b831b16b7cb45277, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3446563281202524987, guid: 73682b4d29058492b831b16b7cb45277, type: 3}
       propertyPath: m_LocalPosition.z
@@ -793,7 +793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9063414293708398704, guid: 73682b4d29058492b831b16b7cb45277, type: 3}
       propertyPath: _worldKillBoxOffset
-      value: 9
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

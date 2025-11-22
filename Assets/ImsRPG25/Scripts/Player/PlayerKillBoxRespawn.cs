@@ -32,8 +32,9 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
+#if UNITY_EDITOR
             // Debug.Log($"ImsGDK.PlayerKillBoxRespawn as {name}.Start() start.");
-
+#endif
             DoValidate();
         }
 
@@ -42,6 +43,9 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
         {
             if (!_ok) return;
 
+#if UNITY_EDITOR
+            // Debug.Log($"ImsGDK.PlayerKillBoxRespawn as {name}.IsOutsideWorldKillBox() character at X:{_playerTransform.position.x} Y:{_playerTransform.position.y} Z:{_playerTransform.position.z}");
+#endif
             if (IsOutsideWorldKillBox(ref _playerTransform))
             {
                 DoPlayerRespawn();
@@ -82,7 +86,6 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
                 return;
             }
             _playerTerrainSpawnTransform = playerSpawnGO.transform;
-            this.transform.position = _playerTerrainSpawnTransform.position;
 
             //
             // [Future] This DoValidate() needs a dynamic trigger whenever a
@@ -106,8 +109,9 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
             // Find world limits from all terains.
             for (int i = allTerrains.Count - 1; i >= 0; i--)
             {
+#if UNITY_EDITOR
                 // Debug.Log($"ImsGDK.PlayerKillBoxRespawn as {name}.DoValidate() says '{allTerrains[i].name}' terrain is active.");
-
+#endif
                 Vector3 worldAxisMin = allTerrains[i].terrainData.bounds.min;
                 Vector3 worldAxisMax = allTerrains[i].terrainData.bounds.max;
 
@@ -150,8 +154,10 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
 
         protected bool IsOutsideWorldKillBox(ref Transform inTransform)
         {
+#if UNITY_EDITOR
             // Debug.Log($"ImsGDK.PlayerKillBoxRespawn as {name}.IsOutsideWorldKillBox() character at X:{inTransform.position.x} Y:{inTransform.position.y} Z:{inTransform.position.z}");
-
+            // Debug.Log($"ImsGDK.PlayerKillBoxRespawn as {name}.IsOutsideWorldKillBox() WKB is X:{_wkbXLeft} {_wkbXRight} Y:{_wkbYTop} {_wkbYBottom} Z:{_wkbZFront} {_wkbZBack}");
+#endif
             // Is Character outside World Kill Box (WKB) for all terrains?
             if (_wkbXLeft < inTransform.position.x
              || _wkbXRight > inTransform.position.x
@@ -168,6 +174,10 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
 
         protected void DoPlayerRespawn()
         {
+#if UNITY_EDITOR
+            // Debug.Log($"ImsGDK.PlayerKillBoxRespawn as {name}.DoPlayerRespawn() WKB is X:{_wkbXLeft} {_wkbXRight} Y:{_wkbYTop} {_wkbYBottom} Z:{_wkbZFront} {_wkbZBack}");
+            // Debug.Log($"ImsGDK.PlayerKillBoxRespawn as {name}.DoPlayerRespawn() Spawn at X:{_playerTerrainSpawnTransform.position.x} Y:{_playerTerrainSpawnTransform.position.y} Z:{_playerTerrainSpawnTransform.position.z}");
+#endif
             // Move player to terrain player spawn position.
             _playerCharacterController.enabled = false;
             _playerTransform.position = _playerTerrainSpawnTransform.position;

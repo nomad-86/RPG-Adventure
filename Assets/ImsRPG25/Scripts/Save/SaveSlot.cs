@@ -20,33 +20,44 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
 
         // public virtual void Awake()
         // {
+#if UNITY_EDITOR
         //     Debug.Log($"ImsGDK.SaveSlotSO as {name}.Awake() start.");
+#endif
         // }
 
         // public virtual void OnEnable()
         // {
+#if UNITY_EDITOR
         //     Debug.Log($"ImsGDK.SaveSlotSO as {name}.OnEnable() start.");
+#endif
         // }
 
         // public virtual void OnDisable()
         // {
+#if UNITY_EDITOR
         //     Debug.Log($"ImsGDK.SaveSlotSO as {name}.OnDisable() start.");
+#endif
         // }
 
         // public virtual void OnDestroy()
         // {
+#if UNITY_EDITOR
         //     Debug.Log($"ImsGDK.SaveSlotSO as {name}.OnDestroy() start.");
+#endif
         // }
 
         // public virtual void OnValidate()
         // {
+#if UNITY_EDITOR
         //     Debug.Log($"ImsGDK.SaveSlotSO as {name}.OnValidate() start.");
+#endif
         // }
 
         public virtual void Reset()
         {
+#if UNITY_EDITOR
             // Debug.Log($"ImsGDK.SaveSlotSO as {name}.Reset() start.");
-
+#endif
             DoReset();
         }
 
@@ -66,7 +77,7 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
             catch (Exception e)
             {
                 Debug.LogError($"ImsGDK.SaveSlotSO as {name}.DoSaveJson() with {e.ToString()}");
-                // throw;     // Commented out. Intentionally not re-throwing.
+                // throw;     // Intentionally not re-throwing.
                 return false;
             }
             return true;
@@ -88,7 +99,7 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
             catch (Exception e)
             {
                 Debug.LogError($"ImsGDK.SaveSlotSO as {name}.DoLoadJson().ReadAllText() with {e.ToString()}");
-                // throw;     // Commented out. Intentionally not re-throwing.
+                // throw;     // Intentionally not re-throwing.
                 return false;
             }
 
@@ -100,7 +111,7 @@ namespace ImsGDK    // 'Immersive Studios' -> 'Game Development Kit (GDK)'.
             catch (Exception e)
             {
                 Debug.LogError($"ImsGDK.SaveSlotSO as {name}.DoLoadJson().FromJsonOverwrite() with {e.ToString()}");
-                // throw;     // Commented out. Intentionally not re-throwing.
+                // throw;     // Intentionally not re-throwing.
                 return false;
             }
             return true;
