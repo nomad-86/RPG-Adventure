@@ -25,9 +25,9 @@ The objective of this project is to design and develop a small but feature-compl
 
 ### Player Movement (John)
 
-- [ ] The player can move freely within the game world using keyboard inputs (WASD or arrow keys).
-- [ ] The Player can change speeds between crouch and sprint.
-- [ ] Movement is smooth and responsive, with a simple collision detection system to prevent the player from passing through objects.
+- [x] The player can move freely within the game world using keyboard inputs (WASD or arrow keys).
+- [x] The Player can change speeds between crouch and sprint.
+- [x] Movement is smooth and responsive, with a simple collision detection system to prevent the player from passing through objects.
 
 ### Camera Control (John)
 
